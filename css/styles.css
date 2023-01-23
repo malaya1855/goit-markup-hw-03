@@ -24,6 +24,101 @@ a {
     color: inherit;
 }
 li {list-style: none;}
+
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* reset end */
+
+.container-top,
+.container-portfolio {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
+  }
+.container-top.border{
+    border-bottom: 1px solid var(--accent-subtitle);
+}
+.container-bottom {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        outline: 1px solid tomato;}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    outline: 1px solid tomato;
+}
+
+.flex-header{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+align-items: center;
+}
+
+.flex-menu{
+    display: flex;
+}
+.menu{
+    margin-right: 40px;
+}
+.menu:last-child{
+margin-right: 0px
+}
+.flex-contacts {
+    display: flex;
+    font-style: normal;
+}
+.contacts{
+    margin-left: auto;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -32,7 +127,10 @@ li {list-style: none;}
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
     color: var(--primary-brand-color);
+    outline: 1px solid tomato;
+
 }
 .logo-light {
     color: var(--background-light);
@@ -52,6 +150,7 @@ li {list-style: none;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 .nav:hover,
 .nav:focus {
@@ -68,16 +167,32 @@ color: var(--ordinary-text-color);
 .contacts:focus {
     color: var(--accent-brand-color);
 }
+.flex-advantage {
+    display: flex;
+}
+.list-style{
+    margin-right: 24px;
+}
+.list-style:last-child{
+margin-right: 0px;
+}
+
 .title {
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
+text-align: center;
+padding-bottom: 72px;
 }
 .subtitle{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+padding-bottom: 8px;
+}
+.subtitle-upper{
+    padding-top: 32px;
 }
 
 .body-text{
@@ -85,6 +200,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--ordinary-text-color);
+padding-bottom: 32px;
 }
 .hero {
     font-size: 56px;
@@ -105,25 +221,69 @@ color: var(--white-yext-color);
 background-color: var(--primary-brand-color);
 }
 .btn-filter{
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: var(--primary-brand-color);
-background-color: var(--background-light);
-border-color: var(--accent-subtitle);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-right: 24px;
+    color: var(--primary-brand-color);
+    background-color: var(--background-light);
+    border-color: var(--accent-subtitle);
 }
+.btn-filter:last-child{
+    margin-right: 0;}
+    
 .btn-filter:hover,
 .btn-filter:focus {
     color: var(--white-yext-color);
     background-color: var(--accent-brand-color);
     cursor: pointer;
 }
+.flex-works{
+    display:flex;
+}
 .team-board{
     background-color: var(--background-light);
 }
+.flex-team{
+    display: flex;
+}
+.title-adds {
+    padding-top: 120px;
+}
+.team-style{
+    text-align: center;
+}
 .cards {
 background-color: var(--white-yext-color);
-border: 1px solid var(--accent-subtitle);
+
+}
+.footer-text{
+    margin-top: 0;
+    padding-top: 16px;
+    outline: 1px solid tomato;
+}
+.flex-filter-btn{
+    display: flex;
+    margin-top: 96px;
+    justify-content: center;
+
+}
+.flex-filter-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin-top: 72px;
+}
+.filter-cards{
+    padding-left: 16px;
+}
+.filter-cards{
+    padding-left: 16px;
+    border-bottom: 1px solid var(--accent-subtitle);
+    border-left: 1px solid var(--accent-subtitle);
+    border-right: 1px solid var(--accent-subtitle);
 }

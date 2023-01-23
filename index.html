@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Header section -->
     <header>
-        <nav>
+        <div class="container-top flex-header">
             <a href="./" class="logo">Web<span class="logo-dark">Studio</span></a>
-            <ul>
-                <li><a href="./index.html" class="nav current">Studio</a> </li>
-                <li><a href="./portfolio.html" class="nav">Portfolio</a> </li>
-                <li><a href="" class="nav">Contacts</a> </li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+            <nav>
+                    <ul class="flex-menu">
+                        <li class="menu"><a href="./index.html" class="nav current">Studio</a> </li>
+                        <li class="menu"><a href="./portfolio.html" class="nav">Portfolio</a> </li>
+                        <li class="menu"><a href="" class="nav">Contacts</a> </li>
+                    </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="flex-contacts">
+                    <li class="menu"><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+                    <li ><a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!-- Hero -->
@@ -35,65 +39,87 @@
         </section>
         <!-- Advanteges -->
         <section>
-            <h2 class="title" hidden> Advanteges</h2>
-            <ul>
-                <li>
-                    <h3 class="subtitle">Strategy</h3>
-                    <p class="body-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Punctuality</h3>
-                    <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Diligence</h3>
-                    <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Technologies</h3>
-                    <p class="body-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                </li>
-            </ul></section>
+            <div class="container">
+                <h2 class="title" hidden> Advanteges</h2>
+                <ul class="flex-advantage">
+                    <li class="list-style">
+                        <h3 class="subtitle">Strategy</h3>
+                        <p class="body-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                    </li>
+                    <li class="list-style">
+                        <h3 class="subtitle">Punctuality</h3>
+                        <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    </li>
+                    <li class="list-style">
+                        <h3 class="subtitle">Diligence</h3>
+                        <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    </li>
+                    <li class="list-style">
+                        <h3 class="subtitle">Technologies</h3>
+                        <p class="body-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- Samples of our work -->
             <section>  
-            <h2 class="title">What are we doing</h2>
-            <ul>
-                <li><img src="./images/websamples/rectangle71.jpg" alt="Monitor's screen" width="360" height="300"></li>
-                <li><img src="./images/websamples/rectangle72.jpg" alt="Layers of mobile app screen" width="360" height="300"></li>
-                <li><img src="./images/websamples/rectangle73.jpg" alt="Comparing of monitor's and mobile screens" width="360" height="300"></li>
-            </ul>
+            <div class="container">
+                <h2 class="title">What are we doing</h2>
+                <ul class="flex-works">
+                    <li class="list-style"><img src="./images/websamples/rectangle71.jpg" alt="Monitor's screen" width="360" height="300"></li>
+                    <li class="list-style"><img src="./images/websamples/rectangle72.jpg" alt="Layers of mobile app screen" width="360" height="300"></li>
+                    <li class="list-style"><img src="./images/websamples/rectangle73.jpg" alt="Comparing of monitor's and mobile screens" width="360" height="300"></li>
+                </ul>
+            </div>
         </section>
         <!-- Team -->
         <section class="team-board">
-            <h2 class="title">Our Team</h2>
-            <ul>
-                <li><a href="">
-                    <img src="./images/teamphoto/markguerrero.jpg" alt="Photo of the product designer" width="264" height="260">
-                    <h3 class="subtitle">Mark Guerrero</h3>
-                    <p class="body-text">Product Designer</p></a>
-                </li>
-                <li><a href="">
-                    <img src="./images/teamphoto/tomford.jpg" alt="Photo of the frontend manager" width="264" height="260">
-                    <h3 class="subtitle">Tom Ford</h3>
-                    <p class="body-text">Frontend Developer</p></a> 
-                </li>
-                <li><a href="">
-                    <img src="./images/teamphoto/camilagarcia.jpg" alt="Photo of the marketinf manager" width="264" height="260">
-                    <h3 class="subtitle">Camila Garcia</h3>
-                    <p class="body-text">Marketing</p></a> 
-                </li>
-                <li><a href="">
-                    <img src="./images/teamphoto/danielwilson.jpg" alt="Photo of the UI designer" width="264" height="260">
-                    <h3 class="subtitle">Daniel Wilson</h3>
-                    <p class="body-text">UI Designer</p></a> 
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="title title-adds">Our Team</h2>
+                <ul class="flex-team">
+                    <li class="list-style team-style"><a href="">
+                        <img class="photo-cards" src="./images/teamphoto/markguerrero.jpg" alt="Photo of the product designer" width="264" height="260">
+                       
+                            <h3 class="subtitle subtitle-upper">Mark Guerrero</h3>
+                            <p class="body-text">Product Designer</p>
+                       
+                        </a>
+                    </li>
+                    <li class="list-style team-style"><a href="">
+                        <img class="photo-cards" src="./images/teamphoto/tomford.jpg" alt="Photo of the frontend manager" width="264" height="260">
+                        
+                            <h3 class="subtitle subtitle-upper">Tom Ford</h3>
+                            <p class="body-text">Frontend Developer</p>
+                       
+                        </a>
+                    </li>
+                    <li class="list-style team-style"><a href="">
+                        <img class="photo-cards" src="./images/teamphoto/camilagarcia.jpg" alt="Photo of the marketinf manager" width="264" height="260">
+                       
+                            <h3 class="subtitle subtitle-upper">Camila Garcia</h3>
+                            <p class="body-text">Marketing</p>
+                       
+                        </a>
+                    </li>
+                    <li class="list-style team-style"><a href="">
+                        <img class="photo-cards" src="./images/teamphoto/danielwilson.jpg" alt="Photo of the UI designer" width="264" height="260">
+                       
+                            <h3 class="subtitle subtitle-upper">Daniel Wilson</h3>
+                            <p class="body-text">UI Designer</p>
+                
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </section>
     </main>
+    <!-- Footer section -->
     <footer class="footer">
-        <a href="./" class="logo">Web<span class="logo-light">Studio</span></a>
-        <p>Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
+        <div class="container-bottom">
+            <a href="./" class="logo">Web<span class="logo-light">Studio</span></a>
+            <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
 </html>
