@@ -256,16 +256,13 @@ background-color: var(--primary-brand-color);
 .team-style{
     text-align: center;
 }
-.cards {
-background-color: var(--white-yext-color);
 
-}
-.footer-text{
+.footer-text {
     margin-top: 0;
     padding-top: 16px;
     outline: 1px solid tomato;
 }
-.flex-filter-btn{
+.flex-filter-btn {
     display: flex;
     margin-top: 96px;
     justify-content: center;
@@ -281,9 +278,10 @@ background-color: var(--white-yext-color);
 .filter-cards{
     padding-left: 16px;
 }
-.filter-cards{
+.cards{
     padding-left: 16px;
     border-bottom: 1px solid var(--accent-subtitle);
     border-left: 1px solid var(--accent-subtitle);
     border-right: 1px solid var(--accent-subtitle);
+    background-color: var(--white-yext-color);
 }
