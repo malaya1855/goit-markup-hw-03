@@ -227,7 +227,7 @@ color: var(--white-yext-color);
 background-color: var(--primary-brand-color);
 }
 .btn-filter{
-
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -237,17 +237,14 @@ background-color: var(--primary-brand-color);
     padding-left: 24px;
     padding-bottom: 12px;
     padding-right: 24px;
-    margin-right: 24px;
     border-radius: 4px;
     border: 1px solid var(--accent-subtitle);
     color: var(--primary-brand-color);
     background-color: var(--background-light);
     
 }
-/* .btn-filter:last-child {
-    margin-right: 0;
-} */
-    
+
+;
 .btn-filter:hover,
 .btn-filter:focus {
     color: var(--white-yext-color);
@@ -280,10 +277,13 @@ background-color: var(--primary-brand-color);
 }
 .flex-filter-btn {
     display: flex;
+    gap: 24px;
     padding-top: 96px;
     justify-content: center;
 
+
 }
+
 
 .flex-filter-cards {
     display: flex;
