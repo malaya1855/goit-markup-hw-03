@@ -74,6 +74,7 @@ img {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    outline: 1px solid red;
 }
 
 .container.bottom {
@@ -151,18 +152,18 @@ margin-right: 0px
         font-style: normal;}
         
 .hero {
-            padding-top: 188px;
-            padding-bottom: 188px;
-            padding-left: 473px;
-            padding-right: 473px;
+          
             text-align: center;
             color: var(--white-yext-color);
             background-color: var(--accent-color);    
         }
 .hero-name{
+            width: 494px;        
             font-size: 56px;
             line-height: 1.07;
             letter-spacing: 0.02em;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 48px;
         }
 .btn-order{
@@ -170,10 +171,12 @@ margin-right: 0px
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
-            align-items: center;
+            /* align-items: center; */
             letter-spacing: 0.04em;
             color: var(--white-yext-color);
             background-color: var(--primary-brand-color);
+            margin-left: auto;
+            margin-right: auto;
             padding-top: 16px;
             padding-bottom: 16px;
             padding-left: 32px;
@@ -181,12 +184,17 @@ margin-right: 0px
             border: none;
             border-radius: 4px;
         }
+.section{
+            padding-top: 120px; 
+            padding-bottom: 120px;
+        }
+.section-top {padding-top:0;}
 .title {
             font-size: 36px;
             line-height: 1.11;
             letter-spacing: 0.02em;
             text-align: center;
-            padding-bottom: 72px;
+            margin-bottom: 72px;
         }
 .subtitle{
             font-weight: 500;
@@ -208,8 +216,6 @@ margin-right: 0px
         }
 .flex-advantage {
                 display: flex;
-                padding-top: 120px;
-                padding-bottom: 120px;
             }
         .list-style{
                 margin-right: 24px;
@@ -245,20 +251,25 @@ margin-right: 0px
     }
     .flex-works{
         display:flex;
-        padding-bottom: 120px;
     }
     .team-board{
         background-color: var(--background-light);
     }
     .flex-team{
-        display: flex;
-        padding-bottom: 120px;
-    }
+        display: flex;}
     .title-adds {
         padding-top: 120px;
     }
     .team-style{
         text-align: center;
+        background-color: var(--white-yext-color);
+    }
+    .style{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .style-card{
+        margin-bottom: 8px;;
     }
     
     .footer-text {
