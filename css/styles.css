@@ -77,13 +77,8 @@ img {
     outline: 1px solid red;
 }
 
-.container.bottom {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-header{
+
+.section-header{
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -91,7 +86,7 @@ header{
     display: flex;
 align-items: center;
 }
-.top-border{
+.header-border{
     border-bottom: 1px solid var(--accent-subtitle)
 }
 .logo {
@@ -151,27 +146,30 @@ margin-right: 0px
         display: flex;
         font-style: normal;}
         
-.hero {
+.section-hero {
           
             text-align: center;
             color: var(--white-yext-color);
-            background-color: var(--accent-color);    
+            background-color: var(--accent-color);
+            padding-top: 188px;
+            padding-bottom: 188px;
+            
         }
 .hero-name{
             width: 494px;        
             font-size: 56px;
             line-height: 1.07;
             letter-spacing: 0.02em;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
             margin-bottom: 48px;
+            margin-left: auto;
+            margin-right: auto;   
         }
 .btn-order{
             font-family: inherit;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
-            /* align-items: center; */
             letter-spacing: 0.04em;
             color: var(--white-yext-color);
             background-color: var(--primary-brand-color);
@@ -189,6 +187,17 @@ margin-right: 0px
             padding-bottom: 120px;
         }
 .section-top {padding-top:0;}
+.section-portfolio{
+    padding-top: 96px;
+}
+.section-footer
+            {padding-top: 100px;
+                padding-bottom: 100px;
+                background-color: var(--accent-color);
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: var(--accent-subtitle);}
 .title {
             font-size: 36px;
             line-height: 1.11;
@@ -201,18 +210,14 @@ margin-right: 0px
             font-size: 20px;
             line-height: 1.2;
             letter-spacing: 0.02em;
-            padding-bottom: 8px;
         }
-.subtitle-upper{
-            padding-top: 32px;
-        }
+
         
 .body-text{
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--ordinary-text-color);
-            padding-bottom: 32px;
         }
 .flex-advantage {
                 display: flex;
@@ -257,14 +262,9 @@ margin-right: 0px
     }
     .flex-team{
         display: flex;}
-    .title-adds {
-        padding-top: 120px;
-    }
-    .team-style{
+    .style-team{
         text-align: center;
         background-color: var(--white-yext-color);
-    }
-    .style{
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -273,36 +273,36 @@ margin-right: 0px
     }
     
     .footer-text {
-        margin-top: 0;
-        padding-top: 16px;
-        
+        margin-top: 16px;     
     }
+
+
     .flex-filter-btn {
         display: flex;
         gap: 24px;
-        padding-top: 96px;
         justify-content: center;
+        padding-bottom: 72px;
     }
     
     .flex-filter-cards {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 72px;
-        padding-bottom: 120px;
     }
     
     .filter-cards{
         padding-left: 16px;
-    }
-    .cards{
+        padding-top: 32px;
+        padding-bottom: 32px;
         border-bottom: 1px solid var(--accent-subtitle);
         border-left: 1px solid var(--accent-subtitle);
         border-right: 1px solid var(--accent-subtitle);
         background-color: var(--white-yext-color);
+    }
+    .cards{
         width: calc((100% - 2*24px) / 3);
         margin-right: 24px;
         margin-bottom: 48px;
-        ;
+    
     }
     .cards:nth-child(3n){
         margin-right: 0;
@@ -314,9 +314,6 @@ margin-right: 0px
             display: block;
             max-width: 100%; 
             height: auto;}
-    .footer
-            {background-color: var(--accent-color);
-                font-size: 16px;
-                line-height: 1.5;
-                letter-spacing: 0.02em;
-                color: var(--accent-subtitle);}
+.text-card {
+    margin-top: 8px;
+}
